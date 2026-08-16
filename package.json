@@ -1,0 +1,35 @@
+{
+    "name": "md-preview-style",
+    "displayName": "Markdown Preview Style",
+    "description": "Custom CSS for the VS Code Markdown preview, themed with built-in VS Code color variables.",
+    "version": "1.0.0",
+    "publisher": "minghaoguo20",
+    "author": "Minghao Guo",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.100.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+        "markdown",
+        "preview",
+        "css",
+        "style",
+        "details"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/minghaoguo20/md_preview_style.git"
+    },
+    "bugs": {
+        "url": "https://github.com/minghaoguo20/md_preview_style/issues"
+    },
+    "homepage": "https://github.com/minghaoguo20/md_preview_style#readme",
+    "contributes": {
+        "markdown.previewStyles": [
+            "./style.css"
+        ]
+    }
+}

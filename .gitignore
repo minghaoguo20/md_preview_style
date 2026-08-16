@@ -1,0 +1,10 @@
+# Build artifacts
+*.vsix
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Editor / OS
+.DS_Store
+Thumbs.db

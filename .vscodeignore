@@ -1,0 +1,9 @@
+# Everything that should NOT be shipped inside the .vsix
+.git/**
+.github/**
+.gitignore
+.vscodeignore
+*.vsix
+
+# README.md / CHANGELOG.md / LICENSE are intentionally kept:
+# the Marketplace renders them as the extension's tabs.
