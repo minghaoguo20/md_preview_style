@@ -5,10 +5,6 @@
     overflow: hidden;
 }
 
-.markdown-body details[open] {
-    background: var(--vscode-textCodeBlock-background);
-}
-
 .markdown-body details > summary {
     padding: 0.6em 0.8em;
     cursor: pointer;

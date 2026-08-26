@@ -2,7 +2,7 @@
 
 一个只有 CSS 的 VS Code 扩展，用来美化 **Markdown 预览**（`Ctrl/Cmd + Shift + V`）。
 
-目前它做的事情只有一件：把折叠块 `<details>` 渲染成带圆角边框的卡片，展开时加底色、summary 下方加分隔线、内容左右缩进。
+目前它做的事情只有一件：把折叠块 `<details>` 渲染成带圆角边框的卡片（无背景色），summary 下方加分隔线、内容左右缩进。
 颜色全部取自 VS Code 主题变量，所以浅色 / 深色主题都能自动适配。
 
 ## 效果
@@ -29,7 +29,7 @@
 
 ```bash
 npx @vscode/vsce package
-code --install-extension md-preview-style-1.0.0.vsix
+code --install-extension md-preview-style-1.0.1.vsix
 ```
 
 </details>
