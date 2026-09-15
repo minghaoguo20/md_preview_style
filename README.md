@@ -69,6 +69,32 @@ Windows 用 `%USERPROFILE%\.vscode\extensions\`，Remote-SSH 场景用 `~/.vscod
 
 预览的根容器 class 是 `.markdown-body`，写选择器时带上它可以避免影响 VS Code 其它 webview。
 
+## 发布新版本
+
+推送一个 `vX.Y.Z` 格式的 tag 会触发 GitHub Actions 自动打包 vsix 并创建对应的 Release（见 [`.github/workflows/release.yml`](./.github/workflows/release.yml)）。
+
+<details>
+<summary>发布步骤</summary>
+
+1. 更新 `package.json` 里的 `version` 字段
+2. 在 `CHANGELOG.md` 里补一条对应版本的记录
+3. 提交并推送到 `main`：
+   ```bash
+   git add -A
+   git commit -m "Bump version to X.Y.Z"
+   git push origin main
+   ```
+4. 打 tag 并推送，触发自动发布：
+   ```bash
+   git tag vX.Y.Z
+   git push origin vX.Y.Z
+   ```
+5. 打开仓库的 Actions 页面查看运行状态；成功后 Release 页面会自动出现 `vX.Y.Z`，并附带打好的 vsix
+
+> tag 里的版本号必须和 `package.json` 的 `version` 完全一致，否则 workflow 会直接失败退出。
+
+</details>
+
 ## License
 
 [MIT](./LICENSE)

@@ -19,3 +19,11 @@
     margin-left: 1em;
     margin-right: 1em;
 }
+
+/* Force top spacing on the element right after summary so it doesn't hug
+   the summary's bottom border, even if the child's own top margin gets
+   reset elsewhere. summary is always the actual first child, so
+   `:first-child` never matches here — use the adjacent-sibling selector. */
+.markdown-body details[open] > summary + * {
+    margin-top: 0.8em !important;
+}

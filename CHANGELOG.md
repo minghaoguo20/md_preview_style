@@ -4,6 +4,13 @@ All notable changes to this extension are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and versions follow [Semantic Versioning](https://semver.org/).
 
+## [1.0.2] - 2026-09-15
+
+### Fixed
+
+- The element right after an open `<summary>` now always gets top spacing,
+  even when its own top margin is reset by other styles.
+
 ## [1.0.1] - 2026-08-26
 
 ### Changed
